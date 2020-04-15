@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Image";
+}
+
+@using (Html.BeginForm("ConvertImage", "Image", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="file" name="image" accept=".jpg, .jpeg, .png" />
+    <hr/>
+    <input type="submit" value="Convert image" />
+}

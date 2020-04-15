@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "Products";
+}
+
+<h2>Grocery Products</h2>
+<br />
+@foreach (var grocery in ViewBag.groceries)
+{
+    <p><strong>@grocery.Name</strong>: @grocery.Price</p>
+}
+
+<form asp-controller="Shop" asp-action="AddingPage">
+    <input type="submit" value="Add product" />
+</form>
+

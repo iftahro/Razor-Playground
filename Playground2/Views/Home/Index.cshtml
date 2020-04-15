@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome to Iftah's Playground</h1><br />
+        <form asp-controller="Shop" asp-action="Index">
+            <input type="submit" value="Grocery products" />
+        </form>
+        <br/>
+        <form asp-controller="Image" asp-action="Index">
+            <input type="submit" value="Convert an image" />
+        </form>
+    </div>
